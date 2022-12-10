@@ -1,0 +1,51 @@
+.logo {
+        font-family: var(--second-font);
+font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28px / 24px); 
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: var(--active-color);
+
+  @media screen and (min-width: 768px) {
+  font-size: 24px;
+  line-height: calc(28px / 24px);   
+  }
+  @media screen and (min-width: 1200px) {
+  font-size: 26px;
+  line-height: 1.19;
+}
+}
+
+.header__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 87px; 
+     align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+  margin-right: 93px;
+  padding: 24px 0;
+  }
+}
+
+// .logo--pb {
+//   padding-bottom: 20px;
+// }
+
+.logo__web {
+  color: var(--active-color);
+}
+
+.logo__studio-header {
+  color: #000000;
+}
+
+.logo__studio-footer {
+  color: var(--main-white-color);
+}
+
+.logo--mb {
+  display: inline-block;
+  margin-bottom: 20px;
+}

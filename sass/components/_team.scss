@@ -1,0 +1,110 @@
+.team {
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: var(--button-color);
+  padding-top: 60px;
+
+@media screen and (min-width: 1200px) {
+  padding-top: 94px;
+}
+}
+
+.team__title {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  } 
+}
+
+.team__list {
+  padding-right: 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.team__item {
+  background: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2 );
+  }
+
+  @media screen and (min-width: 1200px) {
+  flex-basis: calc((100% - 90px) / 4);
+// &:not(:last-child) {
+//   margin-right: 30px;
+// }
+  }
+}
+
+.team__card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc((100% - 10px) / 4);
+}
+
+.team__social-items {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+&:not(:last-child) {
+  margin-right: 10px;
+}
+}
+.team__social-icons {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icons-color);
+  border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: var(--slow-transform);
+  transition-timing-function: var(--trans-timing);
+
+&:hover,
+&:focus {
+  fill: var(--main-white-color);
+  background-color: var(--active-color);
+}
+}
+
+.team__card-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &:not(last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team__img {
+  width: max-content;
+}
