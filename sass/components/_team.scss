@@ -26,6 +26,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+    gap: 30px;
   }
 }
 
@@ -33,16 +34,25 @@
   background: var(--main-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px) / 2 );
-  }
 
-  @media screen and (min-width: 1200px) {
-  flex-basis: calc((100% - 90px) / 4);
-// &:not(:last-child) {
-//   margin-right: 30px;
-// }
+  &:not(:last-child) {
+     margin-bottom: 30px;
   }
+  
+@media screen and (min-width: 768px) {
+  &:not(:last-child) {
+    margin-bottom: 0px;
+ }
+}
+  // @media screen and (min-width: 768px) {
+  //   flex-basis: calc((100% - 30px) / 2 );
+  // }
+
+//   @media screen and (min-width: 1200px) {
+//   flex-basis: calc((100% - 90px) / 4);
+// // gap: 30px;
+// // margin-bottom: 0;
+// }
 }
 
 .team__card-title {
@@ -69,6 +79,7 @@
 
 &:not(:last-child) {
   margin-right: 10px;
+  // margin-bottom: 30px;
 }
 }
 .team__social-icons {
@@ -99,11 +110,18 @@
 
 .team__card {
   padding-top: 30px;
-  padding-bottom: 30px;
-  &:not(last-child) {
-    margin-bottom: 30px;
-  }
-}
+  padding-bottom: 24px;
+ 
+  // @media screen and (min-width: 768px) {
+  //   &:nth-child(2n+2) {
+  //     padding-bottom: 24px;
+  //   }
+  //     }
+ @media screen and (min-width: 1200px) {
+    // padding-bottom: 30px;  
+ } 
+    }
+
 
 .team__img {
   width: max-content;

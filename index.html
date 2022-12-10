@@ -560,7 +560,8 @@
     <!-- background -->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__contacts">
+        <div class="footer__contacts-box">
+          <div class="footer__contacts">
           <a href="./index.html" class="logo--mb link"
             ><span class="logo__web logo">Web</span
             ><span class="logo__studio-footer logo">Studio</span></a
@@ -588,8 +589,8 @@
               </li>
             </ul>
           </address>
-        </div>
-        <div class="footer__social">
+          </div>
+          <div class="footer__social">
           <p class="footer__text">приєднуйтесь</p>
           <ul class="footer__social-list list">
             <li class="footer__social-item">
@@ -641,6 +642,7 @@
               </a>
             </li>
           </ul>
+          </div>
         </div>
         <div class="footer__form">
           <p class="footer__text">Підпишіться на розсилку</p>
@@ -662,25 +664,7 @@
           </form>
       </div>
         </div>
-        <div class="footer__form-column">
-          <p class="footer__text">Підпишіться на розсилку</p>
-          <form class="footer__form-form">
-            <label for="email" class="footer__form-label">
-              <input
-                type="email"
-                class="footer__form-input"
-                name="email"
-                placeholder="Email"
-              />
-            </label>
-            <button class="footer__btn" type="submit">
-              Підписатися
-              <span
-                ><svg class="footer__icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use></svg> </span>
-            </button>
-          </form>
-        </div>
+
       </div>
     </footer>
 
@@ -729,7 +713,7 @@
       </div>
 
       <!-- Mobile menu -->
-<div class="menu-container js-menu-container" id="mobile-menu">
+<div class="menu-container js-menu-container menu-container--hidden" id="mobile-menu">
   <button class="menu-toggle js-close-menu">
     <svg
       fill="currentColor"
